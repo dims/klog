@@ -4,6 +4,7 @@ go:
   - 1.9.x
   - 1.10.x
   - 1.11.x
+go_import_path: k8s.io/klog
 script:
   - go get -t -v ./...
   - diff -u <(echo -n) <(gofmt -d .)
